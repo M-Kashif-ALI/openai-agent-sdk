@@ -1,0 +1,21 @@
+[project]
+name = "agent-tool-calling"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "M-Kashif-ALI", email = "158289645+M-Kashif-ALI@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "openai-agents>=0.2.9",
+    "python-dotenv>=1.1.1",
+]
+
+[project.scripts]
+agent-tool-calling = "agent_tool_calling:main"
+task1 = "agent_tool_calling.assignment.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

@@ -39,6 +39,7 @@ async def simple_agent():
         input="Introduce yourself and tell me what is AI?",
         run_config=config
     )
+    
 
 
     print(res.final_output)
