@@ -8,13 +8,15 @@ authors = [
 ]
 requires-python = ">=3.12"
 dependencies = [
+    "beautifulsoup4>=4.13.5",
     "openai-agents>=0.2.9",
     "python-dotenv>=1.1.1",
 ]
 
 [project.scripts]
-agent-tool-calling = "agent_tool_calling:main"
+testing = "agent_tool_calling:main"
 task1 = "agent_tool_calling.assignment.main:main"
+task2 = "agent_tool_calling.assignment_2.main:main"
 
 [build-system]
 requires = ["hatchling"]
