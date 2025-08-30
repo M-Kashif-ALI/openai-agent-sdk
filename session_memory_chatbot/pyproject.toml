@@ -1,0 +1,21 @@
+[project]
+name = "session-memory-chatbot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "M-Kashif-ALI", email = "158289645+M-Kashif-ALI@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "openai-agents>=0.2.10",
+    "python-dotenv>=1.1.1",
+]
+
+[project.scripts]
+session-memory-chatbot = "session_memory_chatbot:main"
+task1 = "session_memory_chatbot.assignment_1.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
