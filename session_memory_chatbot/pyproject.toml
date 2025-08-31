@@ -8,13 +8,14 @@ authors = [
 ]
 requires-python = ">=3.12"
 dependencies = [
+    "chainlit>=2.7.2",
     "openai-agents>=0.2.10",
     "python-dotenv>=1.1.1",
 ]
 
 [project.scripts]
 session-memory-chatbot = "session_memory_chatbot:main"
-task1 = "session_memory_chatbot.assignment_1.main:main"
+task1 = "session_memory_chatbot.assignment_1.main:run_main"
 
 [build-system]
 requires = ["hatchling"]
