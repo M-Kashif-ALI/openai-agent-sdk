@@ -1,0 +1,22 @@
+[project]
+name = "streaming-agent-clone"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "M-Kashif-ALI", email = "158289645+M-Kashif-ALI@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "openai-agents>=0.2.10",
+    "python-dotenv>=1.1.1",
+]
+
+[project.scripts]
+testing = "streaming_agent_clone:main"
+testing2 = "streaming_agent_clone.experiment.main:main"
+task = "streaming_agent_clone.assignment.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
